@@ -4,33 +4,40 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff0f3; /* Rosa pastel */
-    font-family: 'Arial', sans-serif;
+    /* Fondo Azul Cielo muy suave y relajante */
+    background-color: #e0f7fa; 
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden; /* Evita scroll cuando el botón crezca */
     text-align: center;
 }
 
 .container {
     background: white;
-    padding: 40px;
+    padding: 50px 40px;
     border-radius: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    /* Sombra suave color lavanda */
+    box-shadow: 0 15px 35px rgba(179, 157, 219, 0.3); 
     z-index: 1;
-    max-width: 80%;
+    max-width: 85%;
+    border: 2px solid #b39ddb; /* Borde sutil lavanda */
 }
 
 h1 {
-    color: #ff4d6d;
-    font-size: 2rem;
+    /* Título en un Lavanda profundo pero suave */
+    color: #5e35b1; 
+    font-size: 2.2rem;
+    margin-bottom: 15px;
 }
 
 p {
-    color: #594d5b;
-    font-size: 1.1rem;
+    /* Texto principal en un gris azulado suave */
+    color: #546e7a; 
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 .buttons-container {
-    margin-top: 30px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,25 +45,37 @@ p {
 }
 
 #yesBtn {
-    background-color: #4caf50;
+    /* Botón SÍ: Un Azul Cielo vibrante que resalta la positividad */
+    background-color: #03a9f4; 
     color: white;
     border: none;
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 18px 35px;
+    font-size: 19px;
     border-radius: 50px;
     cursor: pointer;
     font-weight: bold;
-    transition: transform 0.3s ease; /* Suaviza el crecimiento */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* Suaviza el crecimiento */
+    transition: transform 0.3s ease, background-color 0.3s ease; 
     z-index: 100; /* Asegura que esté por encima de todo */
+    box-shadow: 0 5px 15px rgba(3, 169, 244, 0.4);
+}
+
+/* Efecto al pasar el mouse por encima del SÍ (antes de que crezca) */
+#yesBtn:hover {
+    background-color: #0288d1;
 }
 
 #noBtn {
-    background-color: #ffccd5;
-    color: #ff4d6d;
-    border: none;
+    /* Botón NO: Un gris lavanda muy tenue para que pase desapercibido */
+    background-color: #f3e5f5; 
+    color: #9575cd;
+    border: 1px solid #d1c4e9;
     padding: 10px 20px;
     font-size: 14px;
     border-radius: 50px;
     cursor: pointer;
+    opacity: 0.7;
     transition: opacity 0.5s;
 }
